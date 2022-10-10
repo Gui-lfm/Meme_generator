@@ -10,14 +10,18 @@
 </head>
 
 <body>
-    <input id="text-input" type="text">
-    <input id="meme-insert" type="file">
+    <h1>Meme Generator</h1>
 
-    <section id="meme-image-container">
-        <img src="" alt="">
-        <p id="meme-text"></p>
-    </section>
-    <script src="script.js"></script>
+    <main>
+        <input id="text-input" maxlength="60" type="text">
+        <input id="meme-insert" accept="image/*" type="file">
+
+        <section id="meme-image-container">
+            <p id="meme-text"></p>
+            <img id="meme-image" src="" alt="">
+        </section>
+        <script src="script.js"></script>
+    </main>
 </body>
 
 </html>
