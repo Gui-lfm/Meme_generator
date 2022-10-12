@@ -33,3 +33,18 @@ btnWater.addEventListener('click', function () {
 btnEarth.addEventListener('click', function () {
   memeContainer.style.border = '6px groove green';
 });
+
+// requisito 7
+const memeUm = document.getElementById('meme-1');
+const memeDois = document.getElementById('meme-2');
+const memeTres = document.getElementById('meme-3');
+const memeQuatro = document.getElementById('meme-4');
+
+const memes = [memeUm, memeDois, memeTres, memeQuatro];
+
+for (let index = 0; index < memes.length; index += 1) {
+  const meme = memes[index];
+  meme.addEventListener('click', function () {
+    imgPreview.src = meme.src;
+  });
+}
